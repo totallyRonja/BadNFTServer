@@ -1,0 +1,17 @@
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.exe
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.deps.json
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.runtimeconfig.json
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.runtimeconfig.dev.json
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.dll
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\ref\NFTServer.dll
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\NFTServer.pdb
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.csprojAssemblyReference.cache
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.AssemblyInfoInputs.cache
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.AssemblyInfo.cs
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.csproj.CoreCompileInputs.cache
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.dll
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\ref\NFTServer.dll
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.pdb
+D:\gamedev\Experiments\NFTServer\NFTServer\obj\Debug\net5.0\NFTServer.genruntimeconfig.cache
+D:\gamedev\Experiments\NFTServer\NFTServer\bin\Debug\net5.0\Website.html

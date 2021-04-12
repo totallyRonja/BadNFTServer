@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTServer", "NFTServer\NFTServer.csproj", "{24B8B776-F58B-46EB-8A09-DD46F2F21E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPTest", "TCPTest\TCPTest.csproj", "{2DD49512-934C-415A-8F7D-D583A7B53DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24B8B776-F58B-46EB-8A09-DD46F2F21E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B8B776-F58B-46EB-8A09-DD46F2F21E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B8B776-F58B-46EB-8A09-DD46F2F21E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B8B776-F58B-46EB-8A09-DD46F2F21E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD49512-934C-415A-8F7D-D583A7B53DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD49512-934C-415A-8F7D-D583A7B53DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD49512-934C-415A-8F7D-D583A7B53DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD49512-934C-415A-8F7D-D583A7B53DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.exe
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.deps.json
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.runtimeconfig.json
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.runtimeconfig.dev.json
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.dll
+D:\gamedev\Experiments\NFTServer\TCPTest\bin\Debug\netcoreapp3.0\TCPTest.pdb
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.csprojAssemblyReference.cache
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.AssemblyInfoInputs.cache
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.AssemblyInfo.cs
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.csproj.CoreCompileInputs.cache
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.dll
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.pdb
+D:\gamedev\Experiments\NFTServer\TCPTest\obj\Debug\netcoreapp3.0\TCPTest.genruntimeconfig.cache
