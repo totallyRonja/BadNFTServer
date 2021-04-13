@@ -22,22 +22,22 @@ public class Server {
 			var context = await listener.GetContextAsync();
 			var request = context.Request;
 			var response = context.Response;
-			
-			if(request.Url?.AbsolutePath != "/")
-				continue;
-			
-			//Console.WriteLine($"Received Request at {request.Url?.AbsolutePath}");
-			//Console.WriteLine(request.HttpMethod);
-			//Console.WriteLine(request.UserHostName);
 
-			var data = Encoding.UTF8.GetBytes(Page.GetContent());
-			response.ContentType = "text/html";
-			response.ContentEncoding = Encoding.UTF8;
-			response.ContentLength64 = data.LongLength;
-
-			await response.OutputStream.WriteAsync(data.AsMemory(0, data.Length));
-			response.Close();
+			if (request.Url?.AbsolutePath == "/")
+				await RespondPage(response);
+			else
+				await Page.SendImage(context);
 		}
+	}
+
+	private async Task RespondPage(HttpListenerResponse response) {
+		byte[] data = Encoding.UTF8.GetBytes(Page.GetContent());
+		response.ContentType = "text/html";
+		response.ContentEncoding = Encoding.UTF8;
+		response.ContentLength64 = data.LongLength;
+
+		await response.OutputStream.WriteAsync(data.AsMemory(0, data.Length));
+		response.Close();
 	}
 
 	public void Stop() {

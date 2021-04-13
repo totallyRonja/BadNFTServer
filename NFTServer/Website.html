@@ -1,40 +1,80 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- I hope you understand that NFTs are bad -->
     <meta charset="UTF-8">
     <title>NFT</title>
     <style>
-        #output { overflow: auto; }
-        #output > p { overflow-wrap: break-word; }
-        #output span { color: blue; }
-        #output span.error { color: red; }
+        body {
+            background-color: lightgrey;
+            font-family: Helvetica, sans-serif;
+        }
+        p{
+            text-align: center
+        }
+        #orb{
+            height: 1em;
+            width: 1em;
+            
+            position: relative;
+            top: 0.2em;
+        }
+        #core{
+            background-color: whitesmoke;
+            max-width: 50em;
+            margin: 100px auto auto;
+            
+            padding: 50px;
+        }
+        #status{
+            
+        }
+        input{
+            margin-left: 1em;
+        }
+        #nft{
+            width: 90%;
+            margin-left: 5%;;
+            margin-right: 5%;
+        }
     </style>
 </head>
 <body>
-    <p>Current name is {{name}}</p>
-    <input type="text" id="newName" name="newName" value="{{name}}">
-    <button>apply</button>
-    <br/><div id=output></div>
+<div id="core">
+    <p id="status">This NFT currently belongs* to <span id="name">{{name}}</span>
+        <img src="Orb_Off.png" alt="Socket is not connected" title="Socket is not connected" class="connected" id="orb"/></p>
+    <p>Claim it!
+        <input type="text" id="newName" name="newName" value="you" autocomplete="off"><button>apply</button></p>
+    
+    <img src="NFT.png" alt="A photo of a old statue I 3d printed with huge glasses and a vaporwave filter." id="nft" title="totally a NFT">
+    
+    <p style="color: dimgray">* this random website says their name next to a picture I made. They are not allowed to 
+        revoke my permission to keep this stupid joke running.</p>
+</div>
 
     <script>
         let button = document.querySelector("button");
         let input = document.querySelector("#newName");
-        let output = document.querySelector("#output");
-        let wsUri = "ws://127.0.0.1:8080/";
+        let name = document.querySelector("#name");
+        let orb = document.querySelector("#orb");
+        let wsUri = "ws://nft.ronja.space:3002/updates";
         let websocket = new WebSocket(wsUri);
 
         button.addEventListener("click", onClickButton);
 
         websocket.onopen = function (e) {
             writeToScreen("CONNECTED");
-            doSend("WebSocket rocks");
+            //doSend("WebSocket rocks");
+            orbSocket(true);
         };
 
         websocket.onclose = function (e) {
             writeToScreen("DISCONNECTED");
+            orbSocket(false);
         };
 
         websocket.onmessage = function (e) {
+            name.innerHTML = e.data;
             writeToScreen("<span>RESPONSE: " + e.data + "</span>");
         };
 
@@ -46,15 +86,26 @@
             writeToScreen("SENT: " + message);
             websocket.send(message);
         }
+        
+        function orbSocket(isOn){
+            if(isOn){
+                orb.src = "Orb_On.png";
+                orb.alt = "Socket is connected";
+                orb.title = "Socket is connected";
+            } else {
+                orb.src = "Orb_Off.png";
+                orb.alt = "Socket is not connected";
+                orb.title = "Socket is not connected";
+            }
+        }
 
         function writeToScreen(message) {
-            output.insertAdjacentHTML("afterbegin", "<p>" + message + "</p>");
+            //output.insertAdjacentHTML("afterbegin", "<p>" + message + "</p>");
         }
 
         function onClickButton() {
             let text = input.value;
             text && doSend(text);
-            input.value = "";
             input.focus();
         }
     </script>
